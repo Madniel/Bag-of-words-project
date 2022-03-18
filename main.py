@@ -55,9 +55,9 @@ def apply_feature_transform(
 def data_processing(x: np.ndarray) -> np.ndarray:
     y = x.copy()
     x = []
-    dim = (1920,1080) # 0.84375
+    dim = (1920, 1080)# 0.84375 - old results
     for img in y:
-        image = cv2.resize(img,dim)
+        image = cv2.resize(img, dim)
         x.append(image)
     return x
 
@@ -66,7 +66,7 @@ def project():
     np.random.seed(42)
 
     # TODO: fill the following values
-    first_name = 'Michał'
+    first_name = 'Michael'
     last_name = 'Daniel'
 
     data_path = Path('train')  # You can change the path here
@@ -109,7 +109,7 @@ def project():
 
     # TODO: train a classifier and save it using pickle.dump function
     classifier = DecisionTreeClassifier()
-    classifier = classifier.fit(X_train ,y_train)
+    classifier = classifier.fit(X_train, y_train)
 
     with open('clf.p', 'wb') as solution:
         pickle.dump(classifier, solution)
