@@ -6,6 +6,4 @@ Main libraries used for project:
 * numpy - operations on matrix
 * opencv - operations on photos (mainly resizing)
 
-Link to data https://drive.google.com/drive/folders/1-yE9xondAa7ZgGMXYSJIl_EWWZlBW8UK?usp=sharing
-
 check.py file were used to publish models on website and get results on test data during pandemic.
